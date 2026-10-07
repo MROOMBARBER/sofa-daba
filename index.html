@@ -186,6 +186,65 @@
       background:#25D366;color:white;font-size:1.55rem;box-shadow:0 14px 30px rgba(0,0,0,.22)
     }
 
+
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:14px;
+      margin-top:28px;
+    }
+    .service-card{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      box-shadow:0 6px 18px rgba(20,55,46,.04);
+      display:flex;
+      flex-direction:column;
+      min-height:190px;
+    }
+    .service-card h3{font-size:1.02rem;margin-bottom:7px}
+    .service-card p{font-size:.86rem;line-height:1.45;margin-bottom:8px}
+    .service-card .price{font-size:1.05rem;margin-top:auto}
+    .qty-row{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:8px;
+      margin-top:12px;
+      padding-top:10px;
+      border-top:1px solid var(--line);
+    }
+    .qty-label{font-size:.8rem;font-weight:800;color:var(--muted)}
+    .qty-control{display:flex;align-items:center;gap:6px}
+    .qty-btn{
+      width:30px;height:30px;border-radius:9px;border:1px solid var(--line);
+      background:#fff;font-weight:950;cursor:pointer;color:var(--brand)
+    }
+    .qty-input{
+      width:38px;height:30px;border:1px solid var(--line);border-radius:9px;
+      text-align:center;font-weight:850;background:#fff;color:var(--ink)
+    }
+    .order-bar{
+      position:sticky;
+      bottom:14px;
+      z-index:45;
+      margin-top:24px;
+      background:rgba(20,55,46,.96);
+      color:#fff;
+      border-radius:18px;
+      padding:14px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      box-shadow:0 18px 40px rgba(0,0,0,.18);
+      backdrop-filter:blur(12px)
+    }
+    .order-total{font-size:1.25rem;font-weight:950}
+    .order-meta{font-size:.82rem;color:#c7d5cf}
+    .order-bar .btn{white-space:nowrap}
+
     @media(max-width:980px){
       .menu{display:none;position:absolute;left:16px;right:16px;top:80px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}
       .menu.open{display:flex}
@@ -193,6 +252,7 @@
       .desktop-cta{display:none}
       .hero-wrap,.two{grid-template-columns:1fr}
       .three,.four{grid-template-columns:repeat(2,1fr)}
+      .services-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
       .hero-visual{min-height:430px}
       .band .container{grid-template-columns:repeat(2,1fr)}
       .footer-grid{grid-template-columns:1fr 1fr}
@@ -207,6 +267,22 @@
       .spray{width:128px;height:128px;padding:16px}
       .spray strong{font-size:1.12rem}
       .three,.four{grid-template-columns:1fr}
+      .services-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+      .service-card{padding:12px;min-height:170px;border-radius:15px}
+      .service-card h3{font-size:.94rem}
+      .service-card p{font-size:.78rem}
+      .service-card .price{font-size:.95rem}
+      .qty-btn{width:28px;height:28px}
+      .qty-input{width:34px;height:28px}
+      .order-bar{
+        bottom:82px;
+        border-radius:15px;
+        padding:11px 12px;
+        align-items:stretch;
+      }
+      .order-bar .btn{padding:11px 13px;min-height:44px;font-size:.85rem}
+      .order-total{font-size:1.05rem}
+      .order-meta{font-size:.72rem}
       .band .container{grid-template-columns:1fr 1fr}
       .band-item strong{font-size:1.15rem}
       .cta-panel{padding:30px 22px;display:block}
@@ -229,7 +305,7 @@
     "@type":"LocalBusiness",
     "name":"SOFA DABA",
     "url":"https://sofadaba.ma/",
-    "telephone":"+212661389143",
+    "telephone":"+212614660292",
     "areaServed":{
       "@type":"City",
       "name":"Casablanca"
@@ -349,16 +425,113 @@
       <h2>Une seule équipe pour vos textiles à la maison</h2>
       <p class="lead">Appartement, maison ou villa : nous adaptons le nettoyage au type de textile, à la taille et à l’état de chaque élément.</p>
 
-      <div class="grid three" style="margin-top:32px">
-        <article class="card"><div class="icon">01</div><h3>Fauteuil</h3><p class="muted">Aspiration, détachage adapté, nettoyage en profondeur et extraction.</p><div class="price">150 DH</div></article>
-        <article class="card"><div class="icon">02</div><h3>Canapé 2 places</h3><p class="muted">Nettoyage complet directement chez vous.</p><div class="price">300 DH</div></article>
-        <article class="card"><div class="icon">03</div><h3>Canapé 3 places</h3><p class="muted">Traitement des zones d’usage et extraction des saletés.</p><div class="price">450 DH</div></article>
-        <article class="card"><div class="icon">04</div><h3>Canapé d’angle</h3><p class="muted">Idéal pour les grands salons et villas.</p><div class="price">À partir de 750 DH</div></article>
-        <article class="card"><div class="icon">05</div><h3>Matelas</h3><p class="muted">Nettoyage textile pour matelas 1 ou 2 places.</p><div class="price">À partir de 200 DH</div></article>
-        <article class="card"><div class="icon">06</div><h3>Chaises & poufs</h3><p class="muted">Parfait pour salles à manger, bureaux et salons.</p><div class="price">À partir de 60 DH</div></article>
-        <article class="card"><div class="icon">07</div><h3>Tapis</h3><p class="muted">Nettoyage selon matière, dimensions et niveau de saleté.</p><div class="price">À partir de 50 DH/m²</div></article>
-        <article class="card"><div class="icon">08</div><h3>Salon marocain</h3><p class="muted">Nettoyage des banquettes et tissus au mètre linéaire.</p><div class="price">À partir de 120 DH/ml</div></article>
-        <article class="card"><div class="icon">09</div><h3>Pack Villa</h3><p class="muted">Plusieurs éléments nettoyés lors de la même intervention.</p><div class="price">À partir de 699 DH</div></article>
+      <div class="services-grid" id="servicesGrid">
+        <article class="service-card" data-service="Fauteuil 1 place" data-price="150">
+          <h3>Fauteuil 1 place</h3>
+          <p class="muted">Nettoyage profond + détachage.</p>
+          <div class="price">150 DH</div>
+          <div class="qty-row"><span class="qty-label">Quantité</span><div class="qty-control">
+            <button class="qty-btn" type="button" data-action="minus">−</button>
+            <input class="qty-input" type="number" min="0" value="0" inputmode="numeric" aria-label="Quantité Fauteuil 1 place">
+            <button class="qty-btn" type="button" data-action="plus">+</button>
+          </div></div>
+        </article>
+
+        <article class="service-card" data-service="Canapé 2 places" data-price="300">
+          <h3>Canapé 2 places</h3>
+          <p class="muted">Nettoyage complet à domicile.</p>
+          <div class="price">300 DH</div>
+          <div class="qty-row"><span class="qty-label">Quantité</span><div class="qty-control">
+            <button class="qty-btn" type="button" data-action="minus">−</button>
+            <input class="qty-input" type="number" min="0" value="0" inputmode="numeric" aria-label="Quantité Canapé 2 places">
+            <button class="qty-btn" type="button" data-action="plus">+</button>
+          </div></div>
+        </article>
+
+        <article class="service-card" data-service="Canapé 3 places" data-price="450">
+          <h3>Canapé 3 places</h3>
+          <p class="muted">Nettoyage en profondeur.</p>
+          <div class="price">450 DH</div>
+          <div class="qty-row"><span class="qty-label">Quantité</span><div class="qty-control">
+            <button class="qty-btn" type="button" data-action="minus">−</button>
+            <input class="qty-input" type="number" min="0" value="0" inputmode="numeric" aria-label="Quantité Canapé 3 places">
+            <button class="qty-btn" type="button" data-action="plus">+</button>
+          </div></div>
+        </article>
+
+        <article class="service-card" data-service="Grand canapé" data-price="550">
+          <h3>Grand canapé</h3>
+          <p class="muted">À partir de 4 places.</p>
+          <div class="price">550 DH</div>
+          <div class="qty-row"><span class="qty-label">Quantité</span><div class="qty-control">
+            <button class="qty-btn" type="button" data-action="minus">−</button>
+            <input class="qty-input" type="number" min="0" value="0" inputmode="numeric" aria-label="Quantité Grand canapé">
+            <button class="qty-btn" type="button" data-action="plus">+</button>
+          </div></div>
+        </article>
+
+        <article class="service-card" data-service="Canapé d’angle" data-price="750">
+          <h3>Canapé d’angle</h3>
+          <p class="muted">Idéal grands salons & villas.</p>
+          <div class="price">750 DH</div>
+          <div class="qty-row"><span class="qty-label">Quantité</span><div class="qty-control">
+            <button class="qty-btn" type="button" data-action="minus">−</button>
+            <input class="qty-input" type="number" min="0" value="0" inputmode="numeric" aria-label="Quantité Canapé d’angle">
+            <button class="qty-btn" type="button" data-action="plus">+</button>
+          </div></div>
+        </article>
+
+        <article class="service-card" data-service="Chaise en tissu" data-price="60">
+          <h3>Chaise en tissu</h3>
+          <p class="muted">Assise + dossier tissu.</p>
+          <div class="price">60 DH</div>
+          <div class="qty-row"><span class="qty-label">Quantité</span><div class="qty-control">
+            <button class="qty-btn" type="button" data-action="minus">−</button>
+            <input class="qty-input" type="number" min="0" value="0" inputmode="numeric" aria-label="Quantité Chaise">
+            <button class="qty-btn" type="button" data-action="plus">+</button>
+          </div></div>
+        </article>
+
+        <article class="service-card" data-service="Pouf" data-price="80">
+          <h3>Pouf</h3>
+          <p class="muted">Nettoyage textile complet.</p>
+          <div class="price">80 DH</div>
+          <div class="qty-row"><span class="qty-label">Quantité</span><div class="qty-control">
+            <button class="qty-btn" type="button" data-action="minus">−</button>
+            <input class="qty-input" type="number" min="0" value="0" inputmode="numeric" aria-label="Quantité Pouf">
+            <button class="qty-btn" type="button" data-action="plus">+</button>
+          </div></div>
+        </article>
+
+        <article class="service-card" data-service="Matelas 1 place" data-price="200">
+          <h3>Matelas 1 place</h3>
+          <p class="muted">Nettoyage et extraction.</p>
+          <div class="price">200 DH</div>
+          <div class="qty-row"><span class="qty-label">Quantité</span><div class="qty-control">
+            <button class="qty-btn" type="button" data-action="minus">−</button>
+            <input class="qty-input" type="number" min="0" value="0" inputmode="numeric" aria-label="Quantité Matelas 1 place">
+            <button class="qty-btn" type="button" data-action="plus">+</button>
+          </div></div>
+        </article>
+
+        <article class="service-card" data-service="Matelas 2 places" data-price="350">
+          <h3>Matelas 2 places</h3>
+          <p class="muted">Nettoyage et extraction.</p>
+          <div class="price">350 DH</div>
+          <div class="qty-row"><span class="qty-label">Quantité</span><div class="qty-control">
+            <button class="qty-btn" type="button" data-action="minus">−</button>
+            <input class="qty-input" type="number" min="0" value="0" inputmode="numeric" aria-label="Quantité Matelas 2 places">
+            <button class="qty-btn" type="button" data-action="plus">+</button>
+          </div></div>
+        </article>
+      </div>
+
+      <div class="order-bar" id="orderBar">
+        <div>
+          <div class="order-total">Total : <span id="orderTotal">0 DH</span></div>
+          <div class="order-meta" id="orderItems">Choisissez les quantités ci-dessus</div>
+        </div>
+        <button class="btn btn-gold" id="sendOrder" type="button">Commander sur WhatsApp</button>
       </div>
     </div>
   </section>
@@ -373,23 +546,23 @@
         <article class="card">
           <h3>Silver</h3><div class="pack-price">699 DH</div>
           <ul class="features"><li>Canapé 3 places</li><li>2 fauteuils</li><li>Intervention à domicile</li></ul>
-          <a class="btn btn-secondary" data-wa-message="Bonjour SOFA DABA, je souhaite réserver le Pack Villa Silver à 699 DH." href="#" style="width:100%;margin-top:18px">Choisir Silver</a>
+          <a class="btn btn-secondary" data-wa-message="Bonjour SOFA DABA, je veux le Pack Villa Silver à 699 DH." href="#" style="width:100%;margin-top:18px">Réserver maintenant</a>
         </article>
         <article class="card popular">
           <span class="popular-badge">Le plus populaire</span>
           <h3>Gold</h3><div class="pack-price">999 DH</div>
           <ul class="features"><li>Canapé d’angle</li><li>4 chaises ou fauteuils</li><li>Devis confirmé par photos</li></ul>
-          <a class="btn btn-primary" data-wa-message="Bonjour SOFA DABA, je souhaite réserver le Pack Villa Gold à 999 DH." href="#" style="width:100%;margin-top:18px">Choisir Gold</a>
+          <a class="btn btn-primary" data-wa-message="Bonjour SOFA DABA, je veux le Pack Villa Gold à 999 DH." href="#" style="width:100%;margin-top:18px">Réserver maintenant</a>
         </article>
         <article class="card">
           <h3>Premium</h3><div class="pack-price">1 490 DH</div>
           <ul class="features"><li>Grand salon</li><li>6 chaises</li><li>1 matelas double</li></ul>
-          <a class="btn btn-secondary" data-wa-message="Bonjour SOFA DABA, je souhaite un devis pour le Pack Villa Premium à partir de 1 490 DH." href="#" style="width:100%;margin-top:18px">Choisir Premium</a>
+          <a class="btn btn-secondary" data-wa-message="Bonjour SOFA DABA, je veux le Pack Villa Premium à partir de 1 490 DH." href="#" style="width:100%;margin-top:18px">Réserver maintenant</a>
         </article>
         <article class="card">
           <h3>Full Villa</h3><div class="pack-price">1 990 DH+</div>
           <ul class="features"><li>Canapés & fauteuils</li><li>Chaises & matelas</li><li>Tapis selon devis</li></ul>
-          <a class="btn btn-secondary" data-wa-message="Bonjour SOFA DABA, je souhaite un devis Full Villa à partir de 1 990 DH." href="#" style="width:100%;margin-top:18px">Demander un devis</a>
+          <a class="btn btn-secondary" data-wa-message="Bonjour SOFA DABA, je veux le Pack Full Villa à partir de 1 990 DH." href="#" style="width:100%;margin-top:18px">Réserver maintenant</a>
         </article>
       </div>
 
@@ -418,7 +591,7 @@
         <span class="eyebrow">Spécial Villas</span>
         <h2>Nettoyage de canapés pour villas à Casablanca</h2>
         <p class="lead">SOFA DABA peut regrouper plusieurs canapés, fauteuils, chaises, tapis et matelas lors d’une même intervention. Idéal avant une réception, après des travaux, un déménagement ou simplement pour rafraîchir toute la maison.</p>
-        <a class="btn btn-primary" data-wa-message="Bonjour SOFA DABA, je souhaite un devis pour le nettoyage de plusieurs éléments dans une villa à Casablanca." href="#">Demander un devis Villa</a>
+        <a class="btn btn-primary" data-wa-message="Bonjour SOFA DABA, je souhaite un devis pour le nettoyage de plusieurs éléments dans une villa à Casablanca." href="#">Réserver maintenant Villa</a>
       </div>
       <div class="card">
         <h3>Pourquoi choisir SOFA DABA ?</h3>
@@ -504,7 +677,7 @@
     <div>
       <h3>Contact</h3>
       <p>Casablanca, Maroc</p>
-      <p><a href="tel:+212661389143">06 61 38 91 43</a></p>
+      <p><a href="tel:+212614660292">06 14 66 02 92</a></p>
       <p>Tous les jours : 09:00 – 20:00</p>
       <p><a data-wa href="#">WhatsApp</a></p>
     </div>
@@ -517,13 +690,13 @@
 <a class="float-wa" data-wa href="#" aria-label="WhatsApp">✆</a>
 
 <div class="mobile-bar">
-  <a class="btn btn-secondary" href="tel:+212661389143">Appeler</a>
+  <a class="btn btn-secondary" href="tel:+212614660292">Appeler</a>
   <a class="btn btn-primary" data-wa href="#">WhatsApp</a>
 </div>
 
 <script>
-  const WHATSAPP_NUMBER = "212661389143";
-  const DEFAULT_MESSAGE = "Bonjour SOFA DABA, je souhaite un devis pour un nettoyage à domicile. Voici les photos de mon canapé/fauteuil.";
+  const WHATSAPP_NUMBER = "212614660292";
+  const DEFAULT_MESSAGE = "Bonjour SOFA DABA, je souhaite un devis pour un nettoyage à domicile.";
 
   function waLink(message){
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message || DEFAULT_MESSAGE)}`;
@@ -540,6 +713,89 @@
     el.target = "_blank";
     el.rel = "noopener";
   });
+
+  const serviceCards = [...document.querySelectorAll(".service-card")];
+  const orderTotal = document.getElementById("orderTotal");
+  const orderItems = document.getElementById("orderItems");
+  const sendOrder = document.getElementById("sendOrder");
+
+  function getOrder(){
+    const items = [];
+    let total = 0;
+
+    serviceCards.forEach(card => {
+      const input = card.querySelector(".qty-input");
+      const qty = Math.max(0, parseInt(input.value || "0", 10));
+      const price = parseInt(card.dataset.price, 10);
+      const name = card.dataset.service;
+
+      if(qty > 0){
+        const subtotal = qty * price;
+        total += subtotal;
+        items.push({name, qty, price, subtotal});
+      }
+    });
+
+    return {items, total};
+  }
+
+  function refreshOrder(){
+    const {items, total} = getOrder();
+    orderTotal.textContent = `${total.toLocaleString("fr-FR")} DH`;
+
+    if(!items.length){
+      orderItems.textContent = "Choisissez les quantités ci-dessus";
+      return;
+    }
+
+    const totalQty = items.reduce((sum, item) => sum + item.qty, 0);
+    orderItems.textContent = `${totalQty} article${totalQty > 1 ? "s" : ""} sélectionné${totalQty > 1 ? "s" : ""}`;
+  }
+
+  serviceCards.forEach(card => {
+    const input = card.querySelector(".qty-input");
+
+    card.querySelectorAll(".qty-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        let value = Math.max(0, parseInt(input.value || "0", 10));
+        value += btn.dataset.action === "plus" ? 1 : -1;
+        input.value = Math.max(0, value);
+        refreshOrder();
+      });
+    });
+
+    input.addEventListener("input", () => {
+      if(parseInt(input.value || "0", 10) < 0) input.value = 0;
+      refreshOrder();
+    });
+  });
+
+  sendOrder.addEventListener("click", () => {
+    const {items, total} = getOrder();
+
+    if(!items.length){
+      alert("Veuillez choisir au moins un service.");
+      return;
+    }
+
+    const lines = items.map(item =>
+      `• ${item.name} x${item.qty} = ${item.subtotal.toLocaleString("fr-FR")} DH`
+    );
+
+    const message =
+`Bonjour SOFA DABA, je veux réserver les services suivants :
+
+${lines.join("
+")}
+
+Total estimé : ${total.toLocaleString("fr-FR")} DH
+
+Merci de me confirmer la disponibilité.`;
+
+    window.open(waLink(message), "_blank", "noopener");
+  });
+
+  refreshOrder();
 
   const menu = document.getElementById("menu");
   const toggle = document.getElementById("menuToggle");
