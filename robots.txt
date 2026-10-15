@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://sofaclean.ma/sitemap.xml
