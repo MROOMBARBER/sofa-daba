@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr-MA">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,14 +28,14 @@
 
   <style>
     :root{
-      --bg:#f7f3eb;
-      --surface:#fffdf8;
-      --ink:#13201c;
-      --muted:#66716c;
-      --brand:#14372e;
-      --brand-2:#1f5a48;
-      --accent:#d7b46a;
-      --line:#e8dfd0;
+      --bg:#f4f7f8;
+      --surface:#ffffff;
+      --ink:#152832;
+      --muted:#60717b;
+      --brand:#123e50;
+      --brand-2:#087f8c;
+      --accent:#e6bd75;
+      --line:#dce7e9;
       --shadow:0 18px 50px rgba(20,55,46,.10);
       --radius:24px;
       --radius-sm:16px;
@@ -80,11 +80,11 @@
     .btn-secondary{border:1px solid var(--line);background:rgba(255,255,255,.75)}
     .btn-secondary:hover{background:#fff}
     .btn-hot{
-      background:linear-gradient(135deg,#ff3b30,#d60000);
+      background:linear-gradient(135deg,#087f8c,#075d76);
       color:#fff;
       border:1px solid rgba(255,255,255,.15);
       box-shadow:0 0 0 1px rgba(255,255,255,.08) inset, 0 0 18px rgba(255,59,48,.45), 0 0 34px rgba(214,0,0,.35);
-      animation:hotPulse 1.8s ease-in-out infinite;
+      animation:none;
     }
     .btn-hot:hover{
       transform:translateY(-2px) scale(1.01);
@@ -116,7 +116,7 @@
     /* Header */
     .site-header{
       position:sticky;top:0;z-index:50;
-      backdrop-filter:blur(18px);background:rgba(247,243,235,.88);
+      backdrop-filter:blur(18px);background:rgba(244,247,248,.94);
       border-bottom:1px solid rgba(232,223,208,.8)
     }
     .nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
@@ -386,6 +386,12 @@
       }
       .mobile-bar .btn{padding:12px 14px;min-height:50px}
     }
+  
+    /* 2026 responsive refresh */
+    :focus-visible{outline:3px solid #087f8c;outline-offset:3px}
+    .card{transition:transform .2s ease,box-shadow .2s ease}
+    .card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(18,62,80,.10)}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
   </style>
 
   <script type="application/ld+json">
