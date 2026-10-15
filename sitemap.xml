@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://sofaclean.ma/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://sofaclean.ma/</loc></url>
+  <url><loc>https://sofaclean.ma/nettoyage-canape-maarif/</loc></url>
+  <url><loc>https://sofaclean.ma/nettoyage-canape-anfa/</loc></url>
+  <url><loc>https://sofaclean.ma/nettoyage-canape-racine/</loc></url>
+  <url><loc>https://sofaclean.ma/nettoyage-canape-oasis/</loc></url>
+  <url><loc>https://sofaclean.ma/nettoyage-canape-californie/</loc></url>
+  <url><loc>https://sofaclean.ma/nettoyage-canape-ain-chock/</loc></url>
+  <url><loc>https://sofaclean.ma/nettoyage-canape-ain-diab/</loc></url>
+  <url><loc>https://sofaclean.ma/nettoyage-canape-oulfa/</loc></url>
+  <url><loc>https://sofaclean.ma/nettoyage-canape-hay-hassani/</loc></url>
+  <url><loc>https://sofaclean.ma/nettoyage-canape-sidi-maarouf/</loc></url>
+  <url><loc>https://sofaclean.ma/nettoyage-canape-bouskoura/</loc></url>
+  <url><loc>https://sofaclean.ma/nettoyage-canape-dar-bouazza/</loc></url>
+  <url><loc>https://sofaclean.ma/nettoyage-canape-gauthier/</loc></url>
+</urlset>
