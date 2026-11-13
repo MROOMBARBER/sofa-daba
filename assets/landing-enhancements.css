@@ -30,3 +30,13 @@
 /* Keep pricing CTA visible while scrolling, opposite the WhatsApp bubble. */
 .sc-landing-strip .sc-cta-prices{position:fixed!important;left:18px!important;bottom:calc(20px + env(safe-area-inset-bottom,0px))!important;z-index:7999!important;box-shadow:0 7px 25px #bf161c55!important}
 @media(max-width:570px){.sc-landing-strip .sc-cta-prices{left:12px!important;bottom:calc(18px + env(safe-area-inset-bottom,0px))!important;font-size:11px!important;min-height:49px!important;padding:12px 15px!important;max-width:calc(100vw - 95px)}body{padding-bottom:74px}}
+
+/* Consistent premium visual treatment for Casablanca district landings */
+.sc-local-visual{display:grid;grid-template-columns:1.05fr .95fr;gap:0;overflow:hidden;border-radius:20px;background:#e9f0ff;margin:32px auto 50px;box-shadow:0 16px 45px #182e5814;color:#162a4c}
+.sc-local-visual img{width:100%;height:100%;min-height:310px;max-height:430px;object-fit:cover;display:block}
+.sc-local-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(24px,4vw,55px)}
+.sc-local-copy small{color:#1647d8;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.13em}
+.sc-local-copy h2{font-size:clamp(28px,3.5vw,46px);line-height:1.08;letter-spacing:-.045em;margin:20px 0 13px;color:#142440}
+.sc-local-copy p{color:#5d6d82;line-height:1.7;font-size:14px;margin-bottom:22px}
+.sc-local-copy a{background:#1647d8;color:#fff!important;font-size:13px;font-weight:800;border-radius:30px;padding:13px 22px;text-decoration:none}
+@media(max-width:700px){.sc-local-visual{grid-template-columns:1fr;margin:24px auto 34px}.sc-local-visual img{height:245px;min-height:245px}.sc-local-copy{padding:28px 23px}}
