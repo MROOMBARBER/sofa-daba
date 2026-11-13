@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="17" fill="#1647d8"/><path d="M17 19h22c5 0 8 3 8 7v5H17v-5c0-4 0-7 0-7Z" fill="#fff" opacity=".96"/><path d="M12 35c0-4 3-7 7-7s7 3 7 7v4h12v-4c0-4 3-7 7-7s7 3 7 7v11H12V35Z" fill="#fff"/><path d="M18 47v4m28-4v4" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="SOFA CLEAN logo">
+<title>SOFA CLEAN</title>
+<rect x="2" y="2" width="124" height="124" rx="31" fill="#173A34"/>
+<path d="M27 68V54c0-8 6-14 14-14h46c8 0 14 6 14 14v14" fill="none" stroke="#F6EEDF" stroke-width="7" stroke-linecap="round"/>
+<path d="M31 70h66" stroke="#D4B58B" stroke-width="7" stroke-linecap="round"/>
+<path d="M27 71c-6 0-10 5-10 11v15h94V82c0-6-4-11-10-11-6 0-10 5-10 11v3H37v-3c0-6-4-11-10-11Z" fill="#F6EEDF"/>
+<path d="M28 99v8M100 99v8" stroke="#D4B58B" stroke-width="7" stroke-linecap="round"/>
+<path d="m94 21 2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6Z" fill="#E1BF8C"/>
+</svg>
